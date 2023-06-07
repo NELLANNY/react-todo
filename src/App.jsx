@@ -2,10 +2,15 @@ function App() {
   return (
       <fieldset className="me">
         <legend> INPUT DETAILS</legend>
-           <span>FirstName</span> <input type='text' /><br /> 
-           <span>SecondName</span> <input type='text' /><br />
-           <span>FullName</span> <input type='text' /><br />
-           <span>PassWord</span> <input type='password' /><br /><br />
+           <div>
+              <label>first name </label>
+               <input type="text" />
+           </div>
+           <div>
+              <label>second name </label>
+               <input type="text" />
+           </div>
+           <p> mark: 20% </p>
            <button type='button'>Submit</button>
            </fieldset>
     
