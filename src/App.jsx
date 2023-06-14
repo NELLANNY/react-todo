@@ -1,18 +1,29 @@
+import React from 'react';
+import { useState } from 'react';
+import Btn from './Components/btn';
+import Count from './Components/count';
+
 function App() {
-  return (
-      <fieldset className="me">
-        <legend> INPUT DETAILS</legend>
-           <span>FirstName</span> <input type='text' /><br /> 
-           <span>SecondName</span> <input type='text' /><br />
-           <span>FullName</span> <input type='text' /><br />
-           <span>PassWord</span> <input type='password' /><br /><br />
-           <button type='button'>Submit</button>
-           </fieldset>
-    
+     const [text, setText] = useState('hello');
+     
+     const clickMe =() =>{
+          setText('changed');
+     }
+     return(
+      <div>
+          <p>{text}</p>
+       <Btn name="Ann"/>
+       <Btn name="Uche"/>
+       <Btn name="Amaka" onClick={clickMe} /> 
+       <div>
+       <Count />
+       </div>
+
+      </div>
+     
+     );
     
   
-  );
 
 }
-
 export default App;

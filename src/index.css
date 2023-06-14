@@ -1,12 +1,1 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=sans-serif');
 
-*{
-    box-sizing: border-box;
-
-}
-
-body{
-    font-family: 'Open Sans',sans-serif;
-    max-width: 0;
-    background-color: #fcf3f6;
-}
